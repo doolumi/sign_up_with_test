@@ -41,11 +41,11 @@ class NameValidationFailure implements ValidateFailure {
   NameValidationFailure(this.value);
 }
 
-class RecommenderCodeValidationFailure implements ValidateFailure {
+class PhoneValidationFailure implements ValidateFailure {
   @override
   final String value;
   @override
-  final String message = '추천코드를 정확히 입력하세요.';
+  final String message = '휴대전화 번호를 정확히 입력하세요.';
 
-  RecommenderCodeValidationFailure(this.value);
+  PhoneValidationFailure(this.value);
 }
