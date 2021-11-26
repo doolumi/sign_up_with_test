@@ -1,0 +1,3 @@
+class NameValidationUseCase {
+  call() {}
+}
