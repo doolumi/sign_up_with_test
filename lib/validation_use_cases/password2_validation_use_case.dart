@@ -1,8 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:sign_up_with_test/error.dart';
+import 'package:sign_up_with_test/validation_use_cases/validation_use_case.dart';
 
-class Password2ValidationUseCase {
-  Either<Password2ValidationFailure, String> call(String password) {
+class Password2ValidationUseCase implements ValidationUseCase {
+  @override
+  Either<ValidateFailure, String> call(String password) {
     if (_continuousWords(password)) {
       return Right(password);
     } else {
