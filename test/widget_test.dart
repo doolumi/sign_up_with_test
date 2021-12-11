@@ -7,7 +7,7 @@ import 'test_utility.dart';
 
 void main() {
   group("이메일 유효성 검사 위젯 테스트", () {
-    testWidgets('이메일 유효성 검사 초기 화면 테스트', (WidgetTester tester) async {
+    testWidgets('/ 이메일 유효성 검사 초기 화면 테스트', (WidgetTester tester) async {
       await tester.pumpWidget(const ProviderScope(
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -20,7 +20,7 @@ void main() {
       expect(find.text("이메일을 올바르게 입력해 주세요."), findsNothing);
     });
 
-    testWidgets('이메일 유효성 검사 동작 테스트', (WidgetTester tester) async {
+    testWidgets('/ 이메일 유효성 검사 동작 테스트', (WidgetTester tester) async {
       await tester.pumpWidget(const ProviderScope(
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -39,7 +39,7 @@ void main() {
   });
 
   group("비밀번호 유효성 검사 위젯 테스트", () {
-    testWidgets('비밀번호 유효성 검사 초기 화면 테스트', (WidgetTester tester) async {
+    testWidgets('/ 비밀번호 유효성 검사 초기 화면 테스트', (WidgetTester tester) async {
       await tester.pumpWidget(const ProviderScope(
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -55,7 +55,7 @@ void main() {
       expect(find.text('3개 이상 연속되거나 동일한 문자/숫자 제외'), findsNothing);
     });
 
-    testWidgets('비밀번호 지우기 버튼 동작 테스트', (WidgetTester tester) async {
+    testWidgets('/ 비밀번호 지우기 버튼 동작 테스트', (WidgetTester tester) async {
       await tester.pumpWidget(const ProviderScope(
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -81,7 +81,7 @@ void main() {
       expect(find.byIcon(Icons.close), findsNothing);
     });
 
-    testWidgets('비밀번호 유효성 검사 동작 테스트', (WidgetTester tester) async {
+    testWidgets('/ 비밀번호 유효성 검사 동작 테스트', (WidgetTester tester) async {
       await tester.pumpWidget(const ProviderScope(
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
