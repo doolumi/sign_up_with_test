@@ -9,9 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dartz: ^0.10.0
-  freezed: ^1.0.0
+  dartz: ^0.10.1
+  freezed: ^1.0.2+1
   freezed_annotation: ^1.0.0
+  flutter_riverpod: ^1.0.2
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
