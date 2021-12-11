@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_up_with_test/validation_forms/email_validation_form.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -10,8 +11,18 @@ class SignUpScreen extends StatefulWidget {
 class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Icon(Icons.close),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("유효성 검사"),
+      ),
+      body: SingleChildScrollView(
+          child: Column(
+        children: const [
+          EmailValidationView(),
+        ],
+      )),
     );
   }
 }
+
+
