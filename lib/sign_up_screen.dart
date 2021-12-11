@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sign_up_with_test/validation_forms/email_validation_form.dart';
+import 'package:sign_up_with_test/validation_forms/password_validation_form.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -19,6 +20,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           child: Column(
         children: const [
           EmailValidationView(),
+          PasswordValidationView(),
         ],
       )),
     );
